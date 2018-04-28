@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE generatorConfiguration  
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"  
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">  
+<generatorConfiguration>  
+  <context id="context1" >
+    <commentGenerator>
+    <property name="suppressAllComments" value="true" />
+    </commentGenerator>
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/local_db" userId="root" password="123qwe" />  
+    <javaModelGenerator targetPackage="com.data.citic.entity"  targetProject="generator" />
+    <sqlMapGenerator targetPackage="com.data.citic.mapper" targetProject="generator" ></sqlMapGenerator>
+    <javaClientGenerator targetPackage="com.data.citic.dao" targetProject="generator" type="XMLMAPPER" />
+    <table tableName="tb_data_wlw"
+		enableSelectByExample="false" 
+		enableCountByExample="false"
+		enableUpdateByExample="false"
+		enableDeleteByExample="false"
+		selectByExampleQueryId="false"
+    	domainObjectName="tb_data_wlw">
+    </table>
+  </context>
+</generatorConfiguration>
